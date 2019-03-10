@@ -14,6 +14,8 @@ public class VariableTest {
         getCharacterandStringLiterals();
         System.out.println("------------");
         getConstants();
+        System.out.println("------------");
+        getArrays();
     }
 
     /**
@@ -62,6 +64,15 @@ public class VariableTest {
         String s3 = "src\\com\\example";
         System.out.println(s3);
     }
+
+    private static void getBoolean() {
+        boolean isMoving = false;
+        boolean isJavaFun  = true;
+        if (isMoving) {
+            System.out.println("Moving");
+        }
+    }
+
     /**
      * 声明常量
      */
@@ -69,5 +80,53 @@ public class VariableTest {
         final int NUM_GEARS = 6;
         System.out.println(NUM_GEARS);
         final String PROPERTY_FILE;
+        PROPERTY_FILE = "application.properties";
+    }
+    /**
+     * 声明数组
+     */
+    private static void getArrays() {
+        // 声明创建一个可以包含3个元素的int类型数组
+        int[] intArray = new int[10];
+        // 先创建数组，后添加元素
+        intArray[0] = 10; intArray[1] = 20;
+        intArray[2] = 30; intArray[3] = 40;
+        intArray[8] = 90;
+        int index = 8;
+        System.out.println("索引为" + index + "的元素值为：" + intArray[index]);
+
+        // 支持直接初始化数组，不能声明数组的长度
+        int[] intArray2 = {10, 20, 30};
+        // ArrayIndexOutOfBoundsException
+        // intArray2[3] = 30;
+        int index2 = 1;
+        System.out.println(index2 + "位置元素的值：" + intArray2[index2]);
+        System.out.println("数组长度：" + intArray2.length);
+
+
+
+        // 字符串数组
+        String[] sArray = new String[2];
+        sArray[0] = "BO";
+        sArray[1] = "SUN";
+        System.out.println(sArray[1]);
+
+        // 字符串数组，创建时直接添加元素
+        String[] sArray2 = new String[]{ "aa", "dd" };
+        System.out.println("这是String类型:  " + sArray2[0].getClass().getName());
+        System.out.println("这是什么类型: " + sArray.getClass().getName());
+    }
+
+    private void a() {
+        int[] intArray = new int[3];
+        intArray[0] = 10;
+        intArray[1] = 20;
+        intArray[2] = 30;
+
+        int[] intArray2 = {10, 20, 30};
+
+        int[] intArray3 = new int[] {10, 20, 30};
+
+        System.out.println(intArray[0]);
     }
 }
