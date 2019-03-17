@@ -3,7 +3,15 @@ package com.example08.constructor;
 import com.example07.method.Calculation;
 
 public class ConstructorTest {
+
     public static void main(String[] args) {
+        int speed = 10;
+        Bicycle bicycle;
+        bicycle = new Bicycle(5);
+        bicycle.setSpeed(10);
+    }
+
+    /*public static void main(String[] args) {
         // TODO Auto-generated method stub
         System.out.println("--------Constructor--------");
         getBicycle();
@@ -14,7 +22,7 @@ public class ConstructorTest {
         System.out.println("After the method called: " + bicycle.getGear());
         System.out.println("--------Create Objects--------");
         createObjects();
-    }
+    }*/
 
     private static void getBicycle() {
         Bicycle bicycle = new Bicycle(5,15);
@@ -60,5 +68,6 @@ public class ConstructorTest {
         // 因此，此时对象2不会被回收
 
     }
+
 
 }
