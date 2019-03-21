@@ -1,4 +1,4 @@
-package com.example13.interfaces;
+package com.example15.inheritancepolymorphism;
 
 public interface Learnable {
     void read(String bookName);

@@ -12,7 +12,6 @@ public class InterfaceTest {
     private static void getAble() {
         Learnable under = new Undergraduate("BO");
         under.test("Java");
-
         Learnable post = new Postgraduate("ZHANG");
         post.test("Java");
 

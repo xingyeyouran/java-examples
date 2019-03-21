@@ -11,10 +11,11 @@ public class DefaultStaticMethodTest {
     }
 
     private static void getDefaultMethod() {
-        Playable student = new Undergraduate();
-        student.playGame("God of War IV");
-        Undergraduate undergraduate = new Undergraduate();
-        undergraduate.playGame("The Last of Us II");
+        Learnable under = new Undergraduate();
+        under.study();
+        Learnable post = new Postgraduate();
+        post.study();
+
     }
 
     private static void getStaticMethod() {
