@@ -1,5 +1,8 @@
 Java Examples
 ----------------------
+### update 2019.03.31          
+函数式编程；Lambda表达式；collection Streams API；过滤；映射；聚合；函数式接口；List集合效率；   
+
 ### update 2019.03.28       
 集合；不可变集合          
 作业02&03参考代码    
