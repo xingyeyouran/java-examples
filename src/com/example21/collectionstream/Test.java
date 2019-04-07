@@ -20,7 +20,7 @@ public class Test {
         // getFilter();
         // getMap();
         // getCollect();
-        getCollectGroupingBy();
+        // getCollectGroupingBy();
     }
 
     private static void getForEach() {
@@ -91,6 +91,7 @@ public class Test {
                                 .filter(oa -> oa.getId() == a.getId())
                                 .count() > 0)
                 .collect(Collectors.toList());
+
         apples2.forEach(a -> System.out.println(a.getId()));
     }
 
